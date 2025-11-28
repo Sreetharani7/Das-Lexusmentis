@@ -8,7 +8,7 @@ function Poems() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch("https://das-lexusmentis-backend-1.onrender.com/api/episodes")
+    fetch("https://das-lexusmentis-backend-1.onrender.com/api/poems")
       .then((res) => {
         if (!res.ok) throw new Error("Failed to fetch poems");
         return res.json();

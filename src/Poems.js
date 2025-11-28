@@ -8,7 +8,7 @@ function Poems() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch("http://10.144.202.69:5000/api/poems")
+    fetch("https://das-lexusmentis-backend-1.onrender.com/api/episodes")
       .then((res) => {
         if (!res.ok) throw new Error("Failed to fetch poems");
         return res.json();

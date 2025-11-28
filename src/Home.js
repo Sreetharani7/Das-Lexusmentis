@@ -12,7 +12,6 @@ function Home() {
   useEffect(() => {
     AOS.init({ duration: 1000, once: true });
 
-
     fetch("https://das-lexusmentis-backend-1.onrender.com/api/episodes")
       .then((res) => res.json())
       .then((data) => setEpisodes(data));

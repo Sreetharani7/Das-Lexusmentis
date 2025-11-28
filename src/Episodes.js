@@ -9,7 +9,7 @@ function Episodes() {
 
  
   useEffect(() => {
-    fetch("http://10.144.202.69:5000/api/episodes")
+    fetch("https://das-lexusmentis-backend-1.onrender.com/api/episodes")
       .then((res) => {
         if (!res.ok) throw new Error("Failed to fetch episodes");
         return res.json();

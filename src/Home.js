@@ -12,11 +12,11 @@ function Home() {
   useEffect(() => {
     AOS.init({ duration: 1000, once: true });
 
-    fetch("http://localhost:5000/api/episodes")
+    fetch("https://lexusmentis-backend.onrender.com/api/episodes")
       .then((res) => res.json())
       .then((data) => setEpisodes(data));
 
-    fetch("http://localhost:5000/api/poems")
+    fetch("https://lexusmentis-backend.onrender.com/api/poems")
       .then((res) => res.json())
       .then((data) => setPoems(data));
   }, []);
